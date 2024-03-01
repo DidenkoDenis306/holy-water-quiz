@@ -27,8 +27,9 @@ const Container = styled.section`
   flex-direction: column;
   gap: 25px;
   height: 80vh;
-  width: 100%;
-  padding: 40px 0;
+  max-width: 500px;
+  padding: 30px 0;
+  margin: 0 auto;
 `;
 
 const QuestionTitle = styled.p`
@@ -45,4 +46,5 @@ const QuestionSubtitle = styled.p`
   font-weight: 400;
   line-height: 24px;
   text-align: center;
+  margin-top: 10px;
 `;

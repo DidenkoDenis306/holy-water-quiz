@@ -22,8 +22,6 @@ export const Button: FC<Props> = ({
 };
 
 const StyledButton = styled.button`
-  position: absolute;
-  bottom: 10%;
   display: flex;
   justify-content: center;
   align-items: center;

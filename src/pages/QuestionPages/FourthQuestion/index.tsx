@@ -53,37 +53,46 @@ export const FourthQuestion = () => {
 
   return (
     <QuestionTemplate title={t(`${translationPrefix}.title`)}>
-      <VariantBlocksWrapper>
-        {variants.map((variant) => {
-          const isSelected = isVariantSelected(variant);
-          return (
-            <VariantBlock
-              key={variant}
-              onClick={() => handleSelectVariants(variant)}
-              isSelected={isSelected}
-            >
-              {variant}
-              <StyledCheckBox isSelected={isSelected}>
-                {isSelected && <StyledImage src={checkmarkImage} />}
-              </StyledCheckBox>
-            </VariantBlock>
-          );
-        })}
-      </VariantBlocksWrapper>
+      <Container>
+        <VariantBlocksWrapper>
+          {variants.map((variant) => {
+            const isSelected = isVariantSelected(variant);
+            return (
+              <VariantBlock
+                key={variant}
+                onClick={() => handleSelectVariants(variant)}
+                isSelected={isSelected}
+              >
+                {variant}
+                <StyledCheckBox isSelected={isSelected}>
+                  {isSelected && <StyledImage src={checkmarkImage} />}
+                </StyledCheckBox>
+              </VariantBlock>
+            );
+          })}
+        </VariantBlocksWrapper>
 
-      <Button
-        buttonTitle={t('nextButtonTitle')}
-        onClick={onRedirectToNextQuestion}
-      />
+        <Button
+          buttonTitle={t('nextButtonTitle')}
+          onClick={onRedirectToNextQuestion}
+        />
+      </Container>
     </QuestionTemplate>
   );
 };
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
 
 const VariantBlocksWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 15px;
+  margin-bottom: 20px;
 `;
 
 const VariantBlock = styled.button<SelectedProps>`

@@ -18,7 +18,7 @@ export const ThankYouPage = () => {
 
   useEffect(() => {
     const storedAnswersString = localStorage.getItem('answers');
-    const storedAnswers: any = storedAnswersString
+    const storedAnswers: AnswerData[] = storedAnswersString
       ? JSON.parse(storedAnswersString)
       : [];
     setAnswers(storedAnswers);
@@ -71,9 +71,10 @@ const Container = styled.section`
   display: flex;
   flex-direction: column;
   gap: 25px;
-  width: 100%;
+  max-width: 500px;
   height: 90vh;
   padding: 80px 0;
+  margin: 0 auto;
 `;
 
 const Title = styled.p`

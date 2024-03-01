@@ -48,7 +48,9 @@ const Container = styled.div`
   justify-content: space-between;
   height: 80px;
   padding: 15px 0;
+  max-width: 500px;
   text-align: center;
+  margin: 0 auto;
 `;
 
 const CurrentQuestionText = styled.span`

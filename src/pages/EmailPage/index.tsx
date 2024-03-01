@@ -75,9 +75,10 @@ const Container = styled.section`
   display: flex;
   flex-direction: column;
   gap: 25px;
-  width: 100%;
+  max-width: 500px;
   height: 90vh;
   padding: 80px 0;
+  margin: 0 auto;
 `;
 
 const StyledFrom = styled.form`
@@ -105,7 +106,7 @@ const AgreementText = styled.p`
   font-size: 12px;
   line-height: 18px;
   text-align: center;
-  margin-top: 70px;
+  margin: 70px 0;
 `;
 
 const AgreementLink = styled.a`
