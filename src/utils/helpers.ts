@@ -1,6 +1,6 @@
 import { AnswerData } from 'src/types/answerData.type';
 
-export const convertToCSV = (data: Record<string, any>) => {
+export const convertToCSV = (data: any) => {
   let csvContent = 'order,title,type,answer\n';
 
   data.forEach((answerData: AnswerData) => {
@@ -22,4 +22,15 @@ export const saveAnswer = (answerData: AnswerData) => {
   currentAnswers[answerData.order - 1] = answerData;
 
   localStorage.setItem('answers', JSON.stringify(currentAnswers));
+};
+
+export const getCurrentQuestionNumber = (pathname: string) => {
+  return Number(pathname.split('/')[2]);
+};
+
+export const getProgress = (
+  currentQuestion: number,
+  questionsCount: number
+) => {
+  return (currentQuestion * 100) / (questionsCount + 1);
 };
