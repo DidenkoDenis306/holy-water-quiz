@@ -73,7 +73,7 @@ const Container = styled.section`
   gap: 25px;
   max-width: 500px;
   height: 90vh;
-  padding: 80px 0;
+  padding-top: 80px;
   margin: 0 auto;
 `;
 
