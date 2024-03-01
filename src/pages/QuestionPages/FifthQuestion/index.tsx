@@ -131,7 +131,6 @@ const VariantBlocksWrapper = styled.div`
   display: grid;
   justify-content: center;
   margin-top: 20px;
-  margin-bottom: 100px;
   grid-template-columns: repeat(12, 20px);
   grid-gap: 10px;
   grid-template-areas:
