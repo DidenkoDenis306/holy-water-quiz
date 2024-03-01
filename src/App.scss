@@ -1,0 +1,14 @@
+@use 'scss-reset/reset';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Albert Sans';
+  background-color: #1F002B;
+  color:  #E8EAF2;
+  overflow: hidden;
+  padding: 30px
+}
+

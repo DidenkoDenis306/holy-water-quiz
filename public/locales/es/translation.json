@@ -1,0 +1,60 @@
+{
+  "firstQuestion": {
+    "title": "Cuál es tu idioma preferido?",
+    "subtitle": "Elige un idioma",
+    "languages": {
+      "english": "Inglés",
+      "french": "Francés",
+      "german": "Alemán",
+      "spanish": "Español"
+    }
+  },
+  "secondQuestion": {
+    "title": "Con qué género te identificas?",
+    "subtitle": "Por favor, comparte cómo te identificas",
+    "genders": {
+      "female": "Mujer",
+      "male": "Hombre",
+      "other": "Otro"
+    }
+  },
+  "thirdQuestion": {
+    "title": "Cuál es tu edad?"
+  },
+  "fourthQuestion": {
+    "title": "Qué es lo que más odias en un libro?",
+    "variants": {
+      "lackOfLogic": "Falta de lógica",
+      "slowSpeed": "Una velocidad lenta",
+      "lackOfHumor": "Falta de humor",
+      "genericEnding": "Final demasiado genérico"
+    }
+  },
+  "fifthQuestion": {
+    "title": "Cuáles son tus temas favoritos?",
+    "subtitle": "Elige hasta 3 temas que te gusten",
+    "topics": {
+      "werewolf": "Hombre lobo",
+      "action": "Acción",
+      "royalObsession": "Obsesión real",
+      "billionaire": "Billionaire",
+      "romance": "Romance",
+      "youngAdult": "Joven adulto",
+      "badBoy": "Chico malo"
+    }
+  },
+  "emailPage": {
+    "title": "Correo electrónico",
+    "subtitle": "Ingresa tu correo electrónico para obtener acceso completo",
+    "inputPlaceholder": "Tu correo electrónico",
+    "agreement": "Al continuar, acepto la política de privacidad y los términos de uso."
+  },
+  "quizCompletion": {
+    "title": "Gracias",
+    "subtitle": "por apoyarnos y pasar la prueba",
+    "downloadAnswers": "Descargar mis respuestas",
+    "retakeQuizButtonTitle": "Repetir la prueba"
+  },
+  "nextButtonTitle": "Siguiente",
+  "findingCollections": "Buscando colecciones para ti..."
+}

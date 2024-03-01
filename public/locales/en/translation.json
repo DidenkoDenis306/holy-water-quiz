@@ -1,0 +1,66 @@
+{
+  "firstQuestion": {
+    "title": "What is your preferred language?",
+    "subtitle": "Choose language",
+    "languages": {
+      "english": "English",
+      "french": "French",
+      "german": "German",
+      "spanish": "Spanish"
+    }
+  },
+  "secondQuestion": {
+    "title": "What gender do you identify with?",
+    "subtitle": "Please share how do identify yourself",
+    "genders": {
+      "female": "Female",
+      "male": "Male",
+      "other": "Other"
+    }
+  },
+  "thirdQuestion": {
+    "title": "What is your age?"
+  },
+  "fourthQuestion": {
+    "title": "What do you hate the most in a book?",
+    "variants": {
+
+      "lackOfLogic": "Lack of Logic",
+      "slowSpeed": "A slow speed",
+      "lackOfHumor": "Lack of humor",
+      "genericEnding": "Way to generic ending"
+    }
+  },
+  "fifthQuestion": {
+    "title": "What are your favorite topics?",
+    "subtitle": "Choose up to 3 topics you like",
+    "topics": {
+      "werewolf": "Werewolf",
+      "action": "Action",
+      "royalObsession": "Royal Obsession",
+      "billionaire": "Billionaire",
+      "romance": "Romance",
+      "youngAdult": "Young Adult",
+      "badBoy": "Bad Boy"
+    }
+  },
+  "emailPage": {
+    "title": "Email",
+    "subtitle": "Enter your email to get full access",
+    "inputPlaceholder": "Your email",
+    "agreements": {
+      "firstAgreement": "By continue I agree with",
+      "secondAgreement": " Privacy policy ",
+      "thirdAgreement": "and",
+      "fourthAgreement": " Terms of use."
+    }
+  },
+  "thankYouPage": {
+    "title": "Thank you",
+    "subtitle": "for supporting us and passing quiz",
+    "downloadAnswers": "Download my answers",
+    "retakeQuizButtonTitle": "Retake quiz"
+  },
+  "nextButtonTitle": "Next",
+  "findingCollections": "Finding collections for you..."
+}

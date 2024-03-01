@@ -1,0 +1,60 @@
+{
+  "firstQuestion": {
+    "title": "Quelle est votre langue préférée ?",
+    "subtitle": "Choisissez une langue",
+    "languages": {
+      "english": "Anglais",
+      "french": "Français",
+      "german": "Allemand",
+      "spanish": "Espagnol"
+    }
+  },
+  "secondQuestion": {
+    "title": "Avec quel genre vous identifiez-vous ?",
+    "subtitle": "Veuillez partager comment vous vous identifiez",
+    "genders": {
+      "female": "Femme",
+      "male": "Homme",
+      "other": "Autre"
+    }
+  },
+  "thirdQuestion": {
+    "title": "Quel âge avez-vous ?"
+  },
+  "fourthQuestion": {
+    "title": "Qu'est-ce que vous détestez le plus dans un livre ?",
+    "variants": {
+      "lackOfLogic": "Manque de logique",
+      "slowSpeed": "Une vitesse lente",
+      "lackOfHumor": "Manque d'humour",
+      "genericEnding": "Fin trop générique"
+    }
+  },
+  "fifthQuestion": {
+    "title": "Quels sont vos sujets préférés ?",
+    "subtitle": "Choisissez jusqu'à 3 sujets que vous aimez",
+    "topics": {
+      "werewolf": "Loup-garou",
+      "action": "Action",
+      "royalObsession": "Obsession royale",
+      "billionaire": "Milliardaire",
+      "romance": "Romance",
+      "youngAdult": "Jeune adulte",
+      "badBoy": "Mauvais garçon"
+    }
+  },
+  "emailPage": {
+    "title": "Email",
+    "subtitle": "Entrez votre email pour obtenir un accès complet",
+    "inputPlaceholder": "Votre email",
+    "agreement": "En continuant, j'accepte la politique de confidentialité et les conditions d'utilisation."
+  },
+  "quizCompletion": {
+    "title": "Merci",
+    "subtitle": "pour votre soutien et le passage du quiz",
+    "downloadAnswers": "Télécharger mes réponses",
+    "retakeQuizButtonTitle": "Refaire le quiz"
+  },
+  "nextButtonTitle": "Suivant",
+  "findingCollections": "Recherche de collections pour vous..."
+}
