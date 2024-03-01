@@ -3,10 +3,12 @@ import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { QuestionTemplate } from 'src/shared/ui/components/templates/QuestionTemplate';
 import i18n from 'src/i18n';
-import { saveAnswer } from 'src/utils/helpers';
 import { QuestionType } from 'src/constants/questionType';
+import { useAnswersStore } from 'src/store/answers.store';
 
 export const FirstQuestion = () => {
+  const { saveAnswer } = useAnswersStore();
+
   const { t } = useTranslation();
   const translationPrefix = 'firstQuestion';
 
@@ -39,8 +41,12 @@ export const FirstQuestion = () => {
       <VariantBlocksWrapper>
         {Object.keys(languages).map((language: string) => (
           <VariantBlock
-            onClick={() => handleChangeLanguage(language)}
-            // data-aos="zoom-out"
+            onClick={() =>
+              handleChangeLanguage(
+                languages[language as keyof typeof languages]
+              )
+            }
+            key={language}
           >
             {languages[language as keyof typeof languages]}
           </VariantBlock>

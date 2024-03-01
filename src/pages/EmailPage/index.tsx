@@ -4,12 +4,14 @@ import { Button } from '../../shared/ui/components/Button';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import { QuestionType } from 'src/constants/questionType';
-import { saveAnswer } from 'src/utils/helpers';
 import { EMAIL_PATTERN } from 'src/constants/regularExpressions';
+import { useAnswersStore } from 'src/store/answers.store';
 
 export const EmailPage = () => {
   const { t } = useTranslation();
   const translationPrefix = 'emailPage';
+
+  const { saveAnswer } = useAnswersStore();
 
   const navigate = useNavigate();
 

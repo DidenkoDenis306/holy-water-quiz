@@ -5,7 +5,6 @@ import { Button } from 'src/shared/ui/components/Button';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { QuestionType } from 'src/constants/questionType';
-import { saveAnswer } from 'src/utils/helpers';
 import werewolfImage from 'public/icons/werewolf.png';
 import actionImage from 'public/icons/action.png';
 import royalImage from 'public/icons/royal.png';
@@ -13,12 +12,15 @@ import billionaireImage from 'public/icons/billionaire.png';
 import romanceImage from 'public/icons/romance.png';
 import youngAdultImage from 'public/icons/young_adult.png';
 import badBoyImage from 'public/icons/bad_boy.png';
+import { useAnswersStore } from 'src/store/answers.store';
 
 export const FifthQuestion = () => {
   const { t } = useTranslation();
   const translationPrefix = 'fifthQuestion';
 
   const navigate = useNavigate();
+
+  const { saveAnswer } = useAnswersStore();
 
   const [selectedAnswers, setSelectedAnswers] = useState<string[]>([]);
 

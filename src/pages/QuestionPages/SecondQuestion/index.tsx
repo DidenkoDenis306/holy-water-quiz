@@ -3,12 +3,14 @@ import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { QuestionTemplate } from 'src/shared/ui/components/templates/QuestionTemplate';
 import { QuestionType } from 'src/constants/questionType';
-import { saveAnswer } from 'src/utils/helpers';
 import maleImage from 'public/icons/male.png';
 import femaleImage from 'public/icons/female.png';
 import otherGenderImage from 'public/icons/other.png';
+import { useAnswersStore } from 'src/store/answers.store';
 
 export const SecondQuestion = () => {
+  const { saveAnswer } = useAnswersStore();
+
   const { t } = useTranslation();
   const translationPrefix = 'secondQuestion';
 
@@ -39,6 +41,7 @@ export const SecondQuestion = () => {
       type: QuestionType.SINGLE_SELECT,
       answer: gender,
     });
+
     navigate('/quiz/3');
   };
 

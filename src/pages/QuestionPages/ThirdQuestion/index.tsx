@@ -1,12 +1,13 @@
 import { useTranslation } from 'react-i18next';
-// import { QuestionTemplate } from '../../QuestionTemplate';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { QuestionTemplate } from 'src/shared/ui/components/templates/QuestionTemplate';
 import { QuestionType } from 'src/constants/questionType';
-import { saveAnswer } from 'src/utils/helpers';
+import { useAnswersStore } from 'src/store/answers.store';
 
 export const ThirdQuestion = () => {
+  const { saveAnswer } = useAnswersStore();
+
   const { t } = useTranslation();
   const translationPrefix = 'thirdQuestion';
 

@@ -5,12 +5,14 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from 'src/shared/ui/components/Button';
 import { useState } from 'react';
 import { QuestionType } from 'src/constants/questionType';
-import { saveAnswer } from 'src/utils/helpers';
 import checkmarkImage from 'public/icons/check.svg';
+import { useAnswersStore } from 'src/store/answers.store';
 
 export const FourthQuestion = () => {
   const { t } = useTranslation();
   const translationPrefix = 'fourthQuestion';
+
+  const { saveAnswer } = useAnswersStore();
 
   const navigate = useNavigate();
 

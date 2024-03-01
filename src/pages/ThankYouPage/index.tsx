@@ -1,29 +1,21 @@
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import { Button } from '../../shared/ui/components/Button';
-import { useState, useEffect } from 'react';
 import { convertToCSV } from 'src/utils/helpers';
 import { useNavigate } from 'react-router-dom';
 import checkmark from 'public/icons/checkmark.png';
 import downloadIcon from 'public/icons/download.svg';
-import { AnswerData } from 'src/types/answerData.type';
+import { useAnswersStore } from 'src/store/answers.store';
 
 export const ThankYouPage = () => {
   const { t } = useTranslation();
   const translationPrefix = 'thankYouPage';
 
-  const [answers, setAnswers] = useState<AnswerData[] | null>(null);
+  const { answers } = useAnswersStore();
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const storedAnswersString = localStorage.getItem('answers');
-    const storedAnswers: AnswerData[] = storedAnswersString
-      ? JSON.parse(storedAnswersString)
-      : [];
-    setAnswers(storedAnswers);
-  }, []);
-
+  console.log(answers);
   const handleDownload = () => {
     const csvContent = convertToCSV(answers);
 
